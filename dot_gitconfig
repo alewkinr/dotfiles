@@ -24,7 +24,7 @@
 	frag = magenta bold
 	old = red bold
 	new = green bold
-	whitespace = red reserve
+	whitespace = red reverse
 
 [color "status"]
 	added = green bold
