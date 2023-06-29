@@ -1,0 +1,123 @@
+##################
+#### PERSONAL ####
+##################
+# github.com
+Host github.com
+Hostname github.com
+IdentityFile ~/.ssh/id_rsa
+Port 22
+User alewkinr
+
+# gitlab.com
+Host gitlab.com
+Hostname gitlab.com
+Preferredauthentications publickey
+IdentityFile ~/.ssh/id-personal-macbook
+Port 22
+User raleshkin
+
+
+
+# outline-ec-drf (edgecenter.ru)
+Host outline-ec-drf
+Hostname 89.43.107.42
+Port 22
+User alewkinr
+IdentityFile ~/.ssh/id-personal-macbook
+
+Host apitable
+Hostname 91.185.86.61
+Port 22
+User rraleshk
+IdentityFile ~/.ssh/id_rsa
+
+
+##################
+###### WORK ######
+##################
+
+# amoServer
+Host amoServer
+Hostname 138.68.91.122
+Port 22
+User artemh
+IdentityFile ~/.ssh/id-personal-macbook
+
+# ZIGMUND backoffice
+Host zig-backoffice
+Hostname 84.201.131.52
+Port 22
+User raleshkin
+IdentityFile ~/.ssh/id-personal-macbook
+
+# ZIGMUDN DB
+Host zig-database
+Hostname 130.193.42.104
+Port 22
+User raleshkin
+IdentityFile ~/.ssh/zigdb
+
+# ZIGMUND billing
+Host zig-billing
+Hostname 84.201.157.76
+IdentityFile ~/.ssh/id-personal-macbook
+Port 22
+User raleshkin
+
+# OracleCloud
+Host outline-oracle-vpn
+Hostname 138.2.169.139
+Port 22
+User rraleshk
+IdentityFile ~/.ssh/id-personal-macbook
+
+# TWIGAI | gitlab.com
+Host twigai-gitlab.com
+Hostname gitlab.com
+Preferredauthentications publickey
+IdentityFile ~/.ssh/twigai_id_rsa
+Port 22
+User Artem.milo
+
+
+
+
+
+
+##############################
+#### ARCHIVE / DEPRECATED ####
+##############################
+
+# amoDB 
+Host amodb
+Hostname 207.154.224.134
+user ram
+IdentityFile ~/.ssh/id_rsa_amodb
+
+# lyra-project
+Host lyra
+Hostname 188.68.217.68
+IdentityFile ~/.ssh/id-personal-macbook
+Port 7743
+User root
+
+# OutlineVPN prsonal
+Host outline-vpn-server
+Hostname 130.61.121.101
+IdentityFile ~/.ssh/id-personal-macbook
+Port 22
+User alewkinr
+
+#amoCore master
+Host ac-master
+Hostname 130.61.58.130
+IdentityFile ~/.ssh/id-personal-macbook
+Port 22
+User ubuntu
+
+#amoCore VM
+Host ac-gitlab-runner
+Hostname 130.61.58.130
+IdentityFile ~/.ssh/amoCore-gitlab_rsa
+Port 22
+User gitlab-runner
