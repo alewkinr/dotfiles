@@ -5,14 +5,14 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 ## Covered
 * .gitconfig
 * .zshrc
-
+* .ssh/*
+* .cofig/zsh/*
+* .config/kitty/*
 
 ## To be covered
 * .gitignore
 * .netrc
-* .config/kitty/*
 * .tmux.conf
-* .ssh/*
 * .aws/*
 * .kube/*
 * .docker/*
