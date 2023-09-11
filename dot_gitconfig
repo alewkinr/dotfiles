@@ -2,15 +2,16 @@
 	name = Ramil Aleshkin
 	emal = alewkinr@gmail.com
 	username = alewkinr
+
 [init]
 	defaultBranch = main
 
 [core]
 	editor = nvim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
 [web]
 	browser = safari
-
 [color]
 	ui = auto
 
@@ -42,7 +43,7 @@
 
 ## Settings for companies
 [url "git@git.dev.cloud.mts.ru:"]
-  insteadOf = https://git.dev.cloud.mts.ru/
+	insteadOf = https://git.dev.cloud.mts.ru/
 
 [url "git@gitlab.zxz.su:"]
 	insteadOf = https://gitlab.zxz.su
