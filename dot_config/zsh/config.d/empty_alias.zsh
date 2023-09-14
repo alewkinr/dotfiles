@@ -1,7 +1,7 @@
 ## ALIASES ##
+
 ## [Chezmoi](https://www.chezmoi.io)
 alias chmz="chezmoi"
-
 
 ## Python
 alias python="python3.11"
@@ -15,7 +15,6 @@ alias kns="kubens"
 # alias aws="python3 $PYTHONPATH/aws" # fixed for brew binary
 alias awsmts="aws --profile oa-s3 --endpoint-url=https://s3mts.ru:443"
 alias awsgeomts="aws --profile geo-s3 --endpoint-url=https://geo.s3mts.ru:443"
-alias aws_completer="aws_completer"
 
 ## Python-tools
 alias notebook="$PYTHONPATH/jupyter notebook"

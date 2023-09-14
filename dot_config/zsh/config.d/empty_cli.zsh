@@ -4,6 +4,9 @@
 # BREWPATH defines where brew and it's binaries are located
 export BREWPATH="/opt/homebrew/bin"
 
+# HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK - turns off automatic updates during installation (https://apple.stackexchange.com/a/452535)
+export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
+
 ## [Taskfile](https://github.com/go-task/task) 
 # GLOBAL_TASKFILE defines the location of taskfile which can be used from anywhere
 export GLOBAL_TASKFILE="$HOME/tech/github.com/alewkinr/configs/Taskfile.yml"
