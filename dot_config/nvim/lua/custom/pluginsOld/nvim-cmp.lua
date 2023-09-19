@@ -1,0 +1,89 @@
+-- [[ Configure nvim-cmp. Autocompletion for nvim ]]
+
+-- generally we activate CMP
+vim.g.cmp_active = true
+
+-- Set completeopt to have a better completion experience
+vim.o.completeopt = 'menuone,noselect'
+
+local function check_active()
+  local buftype = vim.api.nvim_buf_get_option(0, "buftype")
+  if buftype == "prompt" then return false end
+
+  return vim.g.cmp_active
+end
+
+-- setting highlignting for CopilotItems in Cmp
+vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
+return {
+  {
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      'hrsh7th/cmp-nvim-lsp', -- supports LSP sources
+      'hrsh7th/cmp-cmdline',  -- supports neovim-cmd source
+      'hrsh7th/cmp-buffer',   -- supports buffer source
+      'hrsh7th/cmp-path',     -- supports paths source
+      'hrsh7th/cmp-emoji',    -- supports emoji source
+    },
+    config = function()
+      local cmp = require("cmp")
+      local icons = require("custom.user.icons")
+
+      -- func to filter text files
+      local function only_text_kind(entry, _)
+        local kind = cmp.types.CompletionItemKind[entry:get_kind()]
+        if kind == cmp.types.CompletionItemKind.Text then return true end
+        return false
+      end
+
+      cmp.setup({
+        -- check enabled func
+        enabled = check_active,
+        -- snippets extentions
+        snippet = {},
+        sources = {
+          { name = 'nvim_lsp', group_index = 1,            filter = only_text_kind }, -- add lsp source
+          { name = "copilot",  group_index = 1 },                                     -- add copilot source
+          { name = 'emoji',    option = { insert = true }, group_index = 2 },         -- add emoji source
+          { name = 'path',     group_index = 2 },                                     -- add path source
+          { name = 'buffer',   group_index = 2 },                                     -- add buffer source
+        },
+        formatting = {
+          fields = { "kind", "abbr" },
+          format = function(_, vim_item)
+            vim_item.kind = icons.kind[vim_item.kind]
+            return vim_item
+          end
+        },
+        matching = {
+          disallow_fuzzy_matching = true,
+          disallow_partial_fuzzy_matching = true,
+          disallow_prefix_unmatching = true,
+        },
+        window = { documentation = false },
+        experimental = { ghost_text = true }, -- adds ghost_text view
+        mapping = cmp.mapping.preset.insert {
+          ["<Esc>"] = cmp.mapping(cmp.mapping.abort(),{"s"}),
+          ["<Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              cmp.select_next_item()
+            else
+              fallback()
+            end
+          end, { "i", "c", "s" }),
+        },
+      })
+      -- added supprt for cmdline source only for CMD mode
+      cmp.setup.cmdline({ '/', '?' }, {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = { { name = 'buffer' } }
+      })
+
+      -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+      cmp.setup.cmdline(':', {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({ { name = 'path' } }, { { name = 'cmdline' } })
+      })
+    end
+  },
+}
