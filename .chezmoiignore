@@ -1,5 +1,3 @@
-include/
-
 chezmoi.toml # do not track chezmoi.toml in the source directory
 README.md # do not track README.md in the source directory
 
