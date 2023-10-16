@@ -7,9 +7,8 @@ export ZSH="$(chmz source-path)/include/ohmyzsh"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" # https://github.com/zsh-users/zsh-autosuggestions
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" # https://github.com/zsh-users/zsh-syntax-highlighting
 
-# ZSH_THEME defines the [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) for your oh-my-zsh
-source "$HOME/.config/zsh/themes/lambda-gitster.zsh-theme"
-ZSH_THEME="lambda-gitster"
+# This `source` below defines the [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) for your oh-my-zsh
+source $HOME/.config/zsh/themes/lambda-gitster.zsh-theme
 
 # plugins defines the list of plugins which will be loaded in your zsh. Add wisely, as too many plugins slow down shell startup.
 plugins=(

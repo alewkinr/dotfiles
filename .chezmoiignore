@@ -1,4 +1,8 @@
 include/
+
+chezmoi.toml # do not track chezmoi.toml in the source directory
+README.md # do not track README.md in the source directory
+
 *.boltdb # ignore .boltdb in the target directory
 *.txt   # ignore *.txt in the target directory
 */**/*.txt # ignore *.txt in subdirectories of the target directory
