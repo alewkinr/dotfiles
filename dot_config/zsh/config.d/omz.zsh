@@ -1,14 +1,14 @@
 ### OH-MY-ZSH.SH ###
 
 # ZSH defines the path to your [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) installation
-export ZSH="/Users/$USER/.oh-my-zsh"
-
-# ZSH_THEME defines the [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) for your oh-my-zsh
-ZSH_THEME="lambda-gitster"
+export ZSH="$(chmz source-path)/external_include/ohmyzsh"
 
 # Source plugins installed with brew. Copy to omz directory is not required.
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh # https://github.com/zsh-users/zsh-autosuggestions
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # https://github.com/zsh-users/zsh-syntax-highlighting
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" # https://github.com/zsh-users/zsh-autosuggestions
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" # https://github.com/zsh-users/zsh-syntax-highlighting
+
+# This `source` below defines the [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) for your oh-my-zsh
+source $HOME/.config/zsh/themes/lambda-gitster.zsh-theme
 
 # plugins defines the list of plugins which will be loaded in your zsh. Add wisely, as too many plugins slow down shell startup.
 plugins=(
