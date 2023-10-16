@@ -1,9 +1,11 @@
+; ref: https://www.chezmoi.io/user-guide/include-files-from-elsewhere/#use-git-submodules-in-your-source-directory
+
 [submodule "ohmyzsh"]
-	path = include/ohmyzsh
+	path = external_include/ohmyzsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
 	fetchRecurseSubmodules = "on-demand"
 
 [submodule "kitty-kitten-search"]
-	path = include/kitty-kitten-search
+	path = external_include/kitty-kitten-search
 	url = git@github.com:trygveaa/kitty-kitten-search.git
 	fetchRecurseSubmodules = "on-demand"
