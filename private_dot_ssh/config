@@ -1,10 +1,11 @@
 ##################
 #### PERSONAL ####
 ##################
+
 # github.com
 Host github.com
 Hostname github.com
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/id-rsa-mts-workstation
 Port 22
 User alewkinr
 
@@ -12,7 +13,7 @@ User alewkinr
 Host gitlab.com
 Hostname gitlab.com
 Preferredauthentications publickey
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User raleshkin
 
@@ -23,13 +24,13 @@ Host outline-ec-drf
 Hostname 89.43.107.42
 Port 22
 User alewkinr
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 Host apitable
 Hostname 91.185.86.61
 Port 22
 User rraleshk
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/id-rsa-mts-workstation
 
 
 ##################
@@ -41,14 +42,14 @@ Host amoServer
 Hostname 138.68.91.122
 Port 22
 User artemh
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 # ZIGMUND backoffice
 Host zig-backoffice
 Hostname 84.201.131.52
 Port 22
 User raleshkin
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 # ZIGMUDN DB
 Host zig-database
@@ -60,7 +61,7 @@ IdentityFile ~/.ssh/zigdb
 # ZIGMUND billing
 Host zig-billing
 Hostname 84.201.157.76
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User raleshkin
 
@@ -69,7 +70,7 @@ Host outline-oracle-vpn
 Hostname 138.2.169.139
 Port 22
 User rraleshk
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 # TWIGAI | gitlab.com
 Host twigai-gitlab.com
@@ -97,21 +98,21 @@ IdentityFile ~/.ssh/id_rsa_amodb
 # lyra-project
 Host lyra
 Hostname 188.68.217.68
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 7743
 User root
 
 # OutlineVPN prsonal
 Host outline-vpn-server
 Hostname 130.61.121.101
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User alewkinr
 
 #amoCore master
 Host ac-master
 Hostname 130.61.58.130
-IdentityFile ~/.ssh/id-personal-macbook
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User ubuntu
 
