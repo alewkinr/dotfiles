@@ -22,3 +22,10 @@ if [ -f "$HOME/.yandex-cloud/completion.zsh.inc" ]; then source "$HOME/.yandex-c
 
 ## JetBrains Toolbox App
 export JB_TOOLBOXPATH="$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
+### GIT ###
+# [scm](https://github.com/petr-korobeinikov/scm) helps to keep the git repositories structure
+# SCM_WORKSPACE_DIR defines the root of workspace tree
+export SCM_WORKSPACE_DIR="$HOME/tech"
+# SCM_WORKSPACE_DIR_DEFAULT_PERM defines the default permissions for cloned repositories
+export SCM_WORKSPACE_DIR_DEFAULT_PERM="0755"

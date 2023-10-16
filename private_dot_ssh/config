@@ -12,19 +12,9 @@ User alewkinr
 # gitlab.com
 Host gitlab.com
 Hostname gitlab.com
-Preferredauthentications publickey
 IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User raleshkin
-
-
-
-# outline-ec-drf (edgecenter.ru)
-Host outline-ec-drf
-Hostname 89.43.107.42
-Port 22
-User alewkinr
-IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 Host apitable
 Hostname 91.185.86.61
@@ -32,6 +22,12 @@ Port 22
 User rraleshk
 IdentityFile ~/.ssh/id-rsa-mts-workstation
 
+# OracleCloud VPN Server
+Host outline-oracle-vpn
+Hostname 138.2.169.139
+Port 22
+User rraleshk
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 ##################
 ###### WORK ######
@@ -65,13 +61,6 @@ IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User raleshkin
 
-# OracleCloud
-Host outline-oracle-vpn
-Hostname 138.2.169.139
-Port 22
-User rraleshk
-IdentityFile ~/.ssh/id-rsa-personal-macbook
-
 # TWIGAI | gitlab.com
 Host twigai-gitlab.com
 Hostname gitlab.com
@@ -88,6 +77,13 @@ User Artem.milo
 ##############################
 #### ARCHIVE / DEPRECATED ####
 ##############################
+
+# outline-ec-drf (edgecenter.ru)
+Host outline-ec-drf
+Hostname 89.43.107.42
+Port 22
+User alewkinr
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 # amoDB 
 Host amodb

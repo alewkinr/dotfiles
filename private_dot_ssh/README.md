@@ -9,3 +9,5 @@
 # Management
 
 Managed by [chezmoi](https://github.com/twpayne/chezmoi)
+
+Templates are used to generate keys from 1Password. Script `run_once_after_set_permissions.sh` is used to set permissions for keys.
