@@ -2,3 +2,12 @@
 
 progress = true # show progress bar
 sourceDir = "~/tech/github.com/alewkinr/dotfiles" # source directory
+
+[data]
+    # common
+    name = "Ramil Aleshkin"
+    email = "alewkinr@gmail.com"
+
+    # github_token_secret_id secret id for github token in password manager
+    github_token_secret_id = "z4glrciti5q2xasnxoni7ggemm"
+    github_user = "alewkinr"
