@@ -1,6 +1,8 @@
 ### CLI and Other tools
 
 ## [Homebrew](https://github.com/homebrew)
+# Evaluate if homebrew is working
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # BREWPATH defines where brew and it's binaries are located
 export BREWPATH="/opt/homebrew/bin"
 
@@ -17,3 +19,6 @@ function gtask() { task -t $GLOBAL_TASKFILE $@ -- $(pwd); }
 ## [YandexCloud CLI](https://cloud.yandex.ru/docs/cli/quickstart)
 # Fixing the autocompletion for zsh
 if [ -f "$HOME/.yandex-cloud/completion.zsh.inc" ]; then source "$HOME/.yandex-cloud/completion.zsh.inc"; fi
+
+## JetBrains Toolbox App
+export JB_TOOLBOXPATH="$HOME/Library/Application Support/JetBrains/Toolbox/scripts"

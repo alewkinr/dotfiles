@@ -6,33 +6,7 @@ export EDITOR="nvim"
 
 
 ### BASH | ZSH ###
-# ZSH defines the path to your [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) installation
-export ZSH="/Users/alewkin/.oh-my-zsh"
-# ZSH_THEME defines the [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) for your oh-my-zsh 
-ZSH_THEME="lambda-gitster"
-# plugins defines the list of plugins which will be loaded in your zsh. Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
-	zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
-	
-	git
-	task
-	kubectl
-	docker
-	poetry
-)
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE defines opacity of zsh-autosuggestions plugin
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
-
-# Adding the zsh-autocompletion for tools installed via brew
-if type brew &>/dev/null; then
-	FPATH="$(brew --prefix)/share/zsh-completions":$FPATH
-
-	autoload -Uz compinit
-	compinit
-fi
-source $ZSH/oh-my-zsh.sh
-
+# ...
 
 ### GIT ###
 # [scm](https://github.com/petr-korobeinikov/scm) helps to keep the git repositories structure 
@@ -49,8 +23,5 @@ done
 unset conf
 
 
-
-
-
 # PATH. Exporting it
-export PATH="$PATH:$BREWPATH:$GOPATH/bin:$POETRY_HOME"
+export PATH="$PATH:$BREWPATH:$JB_TOOLBOXPATH:$GOPATH/bin:$POETRY_HOME"

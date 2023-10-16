@@ -1,0 +1,38 @@
+environment {
+    terminal "kitty"
+}
+
+fonts {
+    actionBar [ "Default" 13 ]
+    breadcrumbs [ "Default" 13 ]
+    virtualTabs [ "Default Bold" 13 ]
+    files [ "Default" 14 ]
+    statusBar [ "Default Light" 12 ]
+    tableHeader [ "Default" 12 ]
+    tabs [ "Default" 13 ]
+    preferences [ "Monaco" 13 ]
+}
+
+
+
+behavior {
+    theme "Kon"
+}
+
+keyBindings {
+    "Cmd+2" "core.terminal.toggle"
+}
+
+setup {
+    touchBar [
+        { action "core.favorites" }
+        {
+            action "core.new.folder"
+            backgroundColor #624a2d
+        }
+        {
+            action "core.rename"
+            backgroundColor #3c4554
+        }
+    ]
+}
