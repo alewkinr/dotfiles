@@ -3,7 +3,8 @@
 This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](https://www.chezmoi.io)
 
 ## Covered
-* .gitconfig
+* .config/git/config
+* .config/git/config
 * .zshrc
 * .ssh/*
 * .cofig/zsh/*

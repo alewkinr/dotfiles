@@ -5,16 +5,6 @@ export LANG="en_US.UTF-8"
 export EDITOR="nvim"
 
 
-### BASH | ZSH ###
-# ...
-
-### GIT ###
-# [scm](https://github.com/petr-korobeinikov/scm) helps to keep the git repositories structure 
-# SCM_WORKSPACE_DIR defines the root of workspace tree
-export SCM_WORKSPACE_DIR="$HOME/tech"
-# SCM_WORKSPACE_DIR_DEFAULT_PERM defines the default permissions for cloned repositories
-export SCM_WORKSPACE_DIR_DEFAULT_PERM="0755"
-
 ### CONFIGS ###
 # Loading configs from different location
 for conf in "$HOME/.config/zsh/config.d/"*.zsh; do
