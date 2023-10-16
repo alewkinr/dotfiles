@@ -1,3 +1,9 @@
-[submodule "kitty_search"]
-	path = kitty_search
-	url = https://github.com/trygveaa/kitty-kitten-search
+[submodule "ohmyzsh"]
+	path = include/ohmyzsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
+	fetchRecurseSubmodules = "on-demand"
+
+[submodule "kitty-kitten-search"]
+	path = include/kitty-kitten-search
+	url = git@github.com:trygveaa/kitty-kitten-search.git
+	fetchRecurseSubmodules = "on-demand"

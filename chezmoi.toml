@@ -1,0 +1,4 @@
+# ref: https://www.chezmoi.io/reference/configuration-file/variables/
+
+progress = true # show progress bar
+sourceDir = "~/tech/github.com/alewkinr/dotfiles" # source directory

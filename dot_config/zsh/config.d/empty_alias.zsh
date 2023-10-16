@@ -1,7 +1,7 @@
 ## ALIASES ##
 
 ## [Chezmoi](https://www.chezmoi.io)
-alias chmz="chezmoi"
+alias chmz="chezmoi -c ~/tech/github.com/alewkinr/dotfiles/chezmoi.toml"
 
 ## Python
 alias python="python3.11"
