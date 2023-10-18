@@ -13,7 +13,6 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 
 ## To be covered
 * .kube/*
-* .gitignore
 * .netrc
 * .tmux.conf
 * .docker/*
