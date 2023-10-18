@@ -15,3 +15,8 @@ sourceDir = "~/tech/github.com/alewkinr/dotfiles" # source directory
     # ssh_personal_key_secret_id secret id for my personal ssh key in password manager
     ssh_personal_key_secret_id = "hpppilgphqd7i5cr62dm24xozm"
     ssh_mts_key_secret_id = "nafyeapjwyzpexe6pcszwmi3gy"
+
+    # awscli_twig_ai_* variables for twig.ai aws profile
+    awscli_twig_ai_profile_name = "twig.ai"
+    awscli_twig_ai_region = "us-east-1"
+    awscli_twig_ai_credentials_secret_id = "v2kfdsl7yarul7b2bumvqjukcq"

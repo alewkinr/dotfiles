@@ -3,19 +3,19 @@
 This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](https://www.chezmoi.io)
 
 ## Covered
-* .config/git/config
-* .config/git/config
 * .zshrc
 * .ssh/*
-* .cofig/zsh/*
+* .config/zsh/*
 * .config/kitty/*
+* .config/aws/*
+* .config/git/*
+
 
 ## To be covered
+* .kube/*
 * .gitignore
 * .netrc
 * .tmux.conf
-* .aws/*
-* .kube/*
 * .docker/*
 * .config/nvim/* 
 * .config/zed/* 
