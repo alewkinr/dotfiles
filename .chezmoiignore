@@ -10,5 +10,4 @@ README.md # do not track README.md in the source directory
 
 *.md   # ignore *.md in the target directory
 */**/*.md # ignore *.md in subdirectories of the target directory
-
 Makefile
