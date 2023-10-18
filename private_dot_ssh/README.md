@@ -1,8 +1,9 @@
 # ssh
 
 ## access
-* 644 — public key
-* 600 — private key
+* .ssh directory: 700 (drwx------)
+* public key ( .pub files): 644 (-rw-r--r--)
+* private key ( id_rsa ): 600 (-rw-------)
 
 > If you do not set the rights or set others, the connection via ssh will not happen
 
