@@ -25,10 +25,16 @@ ZSH_DISABLE_COMPFIX="true"
 # Adding the zsh-autocompletion for tools installed via brew
 if type brew &>/dev/null; then
 	FPATH="$(brew --prefix)/share/zsh-completions":$FPATH
-
-	autoload -Uz compinit
-	compinit
 fi
+
+# Adding zsh-autocompletion for CLI tools installed in a custom way
+if [ -d "$HOME/.config/zsh/completions" ]; then
+  FPATH="$HOME/.config/zsh/completions":$FPATH
+fi
+
+# Autoload the zsh-autocompletion
+autoload -U compinit; compinit
+
 
 source $ZSH/oh-my-zsh.sh
 
