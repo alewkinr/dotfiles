@@ -8,6 +8,7 @@ alias python="python3.11"
 alias zshconfig="nvim ~/.zshrc"
 
 ## Kubernetes
+alias k="kubectl"
 alias kctx="kubectx"
 alias kns="kubens"
 

@@ -9,10 +9,10 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 * .config/kitty/*
 * .config/aws/*
 * .config/git/*
+* .config/kube/*
 
 
 ## To be covered
-* .kube/*
 * .netrc
 * .tmux.conf
 * .docker/*
