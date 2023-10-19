@@ -11,6 +11,9 @@ alias zshconfig="nvim ~/.zshrc"
 alias k="kubectl"
 alias kctx="kubectx"
 alias kns="kubens"
+alias ksw="task -t '$HOME/tech/github.com/alewkinr/configs/Taskfile.yml' kube:sw:list"
+alias kswl="task -t '$HOME/tech/github.com/alewkinr/configs/Taskfile.yml' kube:sw:switch"
+
 
 ## AWS CLI
 # alias aws="python3 $PYTHONPATH/aws" # fixed for brew binary
