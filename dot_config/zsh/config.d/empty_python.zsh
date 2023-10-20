@@ -4,4 +4,5 @@
 export PYTHONPATH="/opt/homebrew/bin/python3.11"
 
 # POETRY_HOME defines the home directory for python dependencies manager [Poetry](
-export POETRY_HOME="$HOME/.local/bin"
+export POETRY_HOME="$XDG_CONFIG_HOME/pypoetry"
+

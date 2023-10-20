@@ -35,7 +35,7 @@ export SCM_WORKSPACE_DIR_DEFAULT_PERM="0755"
 
 ### [AWS-CLI](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html) ###
 # AWS_CONFIG_FILE defines the location of config file for aws-cli
-export AWS_CONFIG_FILE="$HOME/.config/aws/config"
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 # AWS_SHARED_CREDENTIALS_FILE defines the location of credentials file for aws-cli
-export AWS_SHARED_CREDENTIALS_FILE="$HOME/.config/aws/credentials"
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 

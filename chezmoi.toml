@@ -2,6 +2,7 @@
 
 progress = true # show progress bar
 sourceDir = "~/tech/github.com/alewkinr/dotfiles" # source directory
+persistentState = "~/tech/github.com/alewkinr/dotfiles/chezmoistate.boltdb" # persistent state directory
 
 [data]
     # common

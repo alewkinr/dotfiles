@@ -12,8 +12,6 @@ plugins=(
 	git
 	# task # temporarily turned off
 	kubectl
-	docker
-	poetry
 )
 
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE defines opacity of zsh-autosuggestions plugin
@@ -28,8 +26,8 @@ if type brew &>/dev/null; then
 fi
 
 # Adding zsh-autocompletion for CLI tools installed in a custom way
-if [ -d "$HOME/.config/zsh/completions" ]; then
-  FPATH="$HOME/.config/zsh/completions":$FPATH
+if [ -d "$XDG_CONFIG_HOME/zsh/completions" ]; then
+  FPATH="$XDG_CONFIG_HOME/zsh/completions":$FPATH
 fi
 
 # Autoload the zsh-autocompletion
@@ -39,4 +37,4 @@ autoload -U compinit; compinit
 source $ZSH/oh-my-zsh.sh
 
 # This `source` below defines the [theme](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) for your oh-my-zsh
-source "$HOME/.config/zsh/themes/lambda-gitster.zsh-theme"
+source "$XDG_CONFIG_HOME/zsh/themes/lambda-gitster.zsh-theme"

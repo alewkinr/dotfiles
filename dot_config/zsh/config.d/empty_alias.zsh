@@ -15,10 +15,12 @@ alias ksw="task -t '$HOME/tech/github.com/alewkinr/configs/Taskfile.yml' kube:sw
 alias kswl="task -t '$HOME/tech/github.com/alewkinr/configs/Taskfile.yml' kube:sw:switch"
 
 
+## [Podman](https://podman.io)
+alias p="podman"
+alias pc="podman-compose"
+
 ## AWS CLI
-# alias aws="python3 $PYTHONPATH/aws" # fixed for brew binary
-alias awsmts="aws --profile oa-s3 --endpoint-url=https://s3mts.ru:443"
-alias awsgeomts="aws --profile geo-s3 --endpoint-url=https://geo.s3mts.ru:443"
+# ... some useful aliases for aws-cli will be here
 
 ## Python-tools
 alias notebook="$PYTHONPATH/jupyter notebook"
