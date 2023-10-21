@@ -1,0 +1,6 @@
+{
+    "github.com": {
+        "user": {{ .github_user | quote }},
+        "oauth_token": {{ ( onepasswordItemFields .github_token_secret_id ).token.value | quote }}
+    }
+}
