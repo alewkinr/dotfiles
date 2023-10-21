@@ -39,3 +39,7 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 # AWS_SHARED_CREDENTIALS_FILE defines the location of credentials file for aws-cli
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 
+
+### [Podman.io](https://docs.podman.io/en/latest/index.html) ###
+# DOCKER_HOST defines the location of podman socket to use it as docker daemon
+export DOCKER_HOST="unix://$HOME/.local/share/containers/podman/machine/qemu/podman.sock"

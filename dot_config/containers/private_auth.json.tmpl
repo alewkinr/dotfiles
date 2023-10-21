@@ -1,0 +1,10 @@
+{{- $username := ((onepasswordDetailsFields .docher_hub_secret_id).username.value) -}}
+{{- $pass := ((onepasswordDetailsFields .docher_hub_secret_id).password.value) -}}
+{{- $creds := printf "%s:%s" $username $pass  -}}
+{
+	"auths": {
+		"docker.io": {
+			"auth": {{- $creds | b64enc | quote }}
+		}
+	}
+}
