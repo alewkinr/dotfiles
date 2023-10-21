@@ -17,6 +17,8 @@ alias kswl="task -t '$HOME/tech/github.com/alewkinr/configs/Taskfile.yml' kube:s
 
 ## [Podman](https://podman.io)
 alias p="podman"
+alias pms="podman machine start host.internal"
+alias pmt="podman machine stop host.internal"
 alias pc="podman-compose"
 
 ## AWS CLI

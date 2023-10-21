@@ -21,3 +21,6 @@ persistentState = "~/tech/github.com/alewkinr/dotfiles/chezmoistate.boltdb" # pe
     awscli_twig_ai_profile_name = "twig.ai"
     awscli_twig_ai_region = "us-east-1"
     awscli_twig_ai_credentials_secret_id = "v2kfdsl7yarul7b2bumvqjukcq"
+
+    # docher_hub_secret_id secret id for docker hub credentials in password manager
+    docher_hub_secret_id = "3dfm6oav5sv2kjnj27p3xfvtju"
