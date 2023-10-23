@@ -43,3 +43,5 @@ export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 ### [Podman.io](https://docs.podman.io/en/latest/index.html) ###
 # DOCKER_HOST defines the location of podman socket to use it as docker daemon
 export DOCKER_HOST="unix://$HOME/.local/share/containers/podman/machine/qemu/podman.sock"
+# PODMAN_USERNS defines the userns mode for podman. It is needed to run containers in VM with current user privileges
+export PODMAN_USERNS=keep-id
