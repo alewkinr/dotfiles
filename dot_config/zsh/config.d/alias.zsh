@@ -8,7 +8,7 @@ alias python="python3.11"
 alias zshconfig="nvim ~/.zshrc"
 
 ## Kubernetes
-alias k="kubectl"
+alias k="kubectl --cache-dir=$HOME/.local/cache/kube"
 alias kctx="kubectx"
 alias kns="kubens"
 alias ksw="task -t '$HOME/tech/github.com/alewkinr/configs/Taskfile.yml' kube:sw:list"

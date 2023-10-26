@@ -45,3 +45,7 @@ export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 export DOCKER_HOST="unix://$HOME/.local/share/containers/podman/machine/qemu/podman.sock"
 # PODMAN_USERNS defines the userns mode for podman. It is needed to run containers in VM with current user privileges
 export PODMAN_USERNS=keep-id
+
+### [OpenTofu](https://opentofu.org/docs/cli/config/config-file) ###
+# TF_CLI_CONFIG_FILE defines the location of config file for OpenTofu CLI
+export TF_CLI_CONFIG_FILE="$XDG_CONFIG_HOME/tofu/tofu.tfrc"

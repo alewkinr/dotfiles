@@ -6,6 +6,8 @@ export EDITOR="nvim"
 
 
 ### CONFIGS ###
+# XDG_CACHE_HOME defines the directory for storing cache and local state of different applications
+export XDG_CACHE_HOME="$HOME/.local/cache/"
 # XDG_CONFIG_HOME defines the directory fo storing configs
 export XDG_CONFIG_HOME="$HOME/.config"
 # Loading configs from different location
