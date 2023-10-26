@@ -1,3 +1,4 @@
+
 environment {
     terminal "kitty"
 }
@@ -17,6 +18,12 @@ fonts {
 
 behavior {
     theme "Kon"
+
+    table {
+        defaults {
+            columns ">size:80,added,modified:135"
+        }
+    }
 }
 
 keyBindings {

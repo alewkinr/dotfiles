@@ -12,7 +12,6 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 * .config/git/*
 * .config/kitty/*
 * .config/kube/*
-* .config/github-copilot/*
 * .config/zsh/*
 * org.yanex.marta/*
 

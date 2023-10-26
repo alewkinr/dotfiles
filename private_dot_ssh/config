@@ -1,120 +1,116 @@
-##################
-#### PERSONAL ####
-##################
+####################################################################################
+#################################### PERSONAL ######################################
+####################################################################################
 
 # github.com
 Host github.com
 Hostname github.com
-IdentityFile ~/.ssh/id-rsa-mts-workstation
 Port 22
 User alewkinr
+IdentityFile ~/.ssh/id-rsa-mts-workstation
 
 # gitlab.com
 Host gitlab.com
 Hostname gitlab.com
-IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User raleshkin
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
-Host apitable
+# alewkin.me | apitable service
+Host me.alewkin/apitable
 Hostname 91.185.86.61
 Port 22
 User rraleshk
 IdentityFile ~/.ssh/id-rsa-mts-workstation
 
-# OracleCloud VPN Server
-Host outline-oracle-vpn
+# cloud.oracle.com | vpn machine
+Host com.oracle.cloud/vpn
 Hostname 138.2.169.139
 Port 22
 User rraleshk
 IdentityFile ~/.ssh/id-rsa-personal-macbook
 
-##################
-###### WORK ######
-##################
+####################################################################################
+################################## zigmund.online ##################################
+####################################################################################
 
-# amoServer
-Host amoServer
-Hostname 138.68.91.122
-Port 22
-User artemh
-IdentityFile ~/.ssh/id-rsa-personal-macbook
-
-# ZIGMUND backoffice
-Host zig-backoffice
+# zigmund.online | backoffice service
+Host online.zigmund/backoffice
 Hostname 84.201.131.52
 Port 22
 User raleshkin
 IdentityFile ~/.ssh/id-rsa-personal-macbook
 
-# ZIGMUDN DB
-Host zig-database
+# zigmund.online | mysql-machine
+Host online.zigmund/mysql-db
 Hostname 130.193.42.104
 Port 22
 User raleshkin
 IdentityFile ~/.ssh/zigdb
 
-# ZIGMUND billing
-Host zig-billing
+# zigmund.online | php-billing-service-machine
+Host online.zigmund/php-billing
 Hostname 84.201.157.76
-IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User raleshkin
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
-# TWIGAI | gitlab.com
-Host twigai-gitlab.com
-Hostname gitlab.com
-Preferredauthentications publickey
-IdentityFile ~/.ssh/twigai_id_rsa
+####################################################################################
+################################### twig.ai ########################################
+####################################################################################
+
+# tech.twig.ai | hetzner.cloud/5.161.134.92 (deprecated server)
+Host cloud.hetzner/twigai
+Hostname 5.161.134.92
 Port 22
-User Artem.milo
+User root
+PreferredAuthentications password
+IdentityFile ~/.ssh/twigai_id_rsa
 
+# tech.twig.ai | gitlab.com account (deprecated vcs)
+# Host gitlab.com/twigai
+# Hostname gitlab.com
+# Port 22
+# User Artem.milo
+# IdentityFile ~/.ssh/twigai_id_rsa
+# PreferredAuthentications publickey
 
+#####################################################################################
+###################################### archive ######################################
+#####################################################################################
 
-
-
-
-##############################
-#### ARCHIVE / DEPRECATED ####
-##############################
-
-# outline-ec-drf (edgecenter.ru)
-Host outline-ec-drf
+# edgecenter.ru | vpn server in FRA
+Host ru.edgecenter/vpn
 Hostname 89.43.107.42
 Port 22
 User alewkinr
 IdentityFile ~/.ssh/id-rsa-personal-macbook
+PreferredAuthentications publickey
 
-# amoDB 
-Host amodb
-Hostname 207.154.224.134
-user ram
-IdentityFile ~/.ssh/id_rsa_amodb
-
-# lyra-project
-Host lyra
-Hostname 188.68.217.68
-IdentityFile ~/.ssh/id-rsa-personal-macbook
-Port 7743
-User root
-
-# OutlineVPN prsonal
-Host outline-vpn-server
+# cloud.oracle.com | second vpn server in FRA
+Host com.oracle.cloud/vpn-2
 Hostname 130.61.121.101
-IdentityFile ~/.ssh/id-rsa-personal-macbook
 Port 22
 User alewkinr
-
-#amoCore master
-Host ac-master
-Hostname 130.61.58.130
 IdentityFile ~/.ssh/id-rsa-personal-macbook
+
+# amocore.ru | postgreSQL machine
+Host ru.amocore/psql-db
+Hostname 207.154.224.134
+Port 22
+User ram
+IdentityFile ~/.ssh/id_rsa_amodb
+
+# amocore.ru | api service
+Host ru.amocore/api
+Hostname 130.61.58.130
 Port 22
 User ubuntu
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
-#amoCore VM
-Host ac-gitlab-runner
+# amocore.ru | gitlab runner
+Host ru.amocore/runner
 Hostname 130.61.58.130
-IdentityFile ~/.ssh/amoCore-gitlab_rsa
 Port 22
 User gitlab-runner
+IdentityFile ~/.ssh/amoCore-gitlab_rsa
