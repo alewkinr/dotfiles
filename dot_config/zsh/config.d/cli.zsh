@@ -49,3 +49,11 @@ export PODMAN_USERNS=keep-id
 ### [OpenTofu](https://opentofu.org/docs/cli/config/config-file) ###
 # TF_CLI_CONFIG_FILE defines the location of config file for OpenTofu CLI
 export TF_CLI_CONFIG_FILE="$XDG_CONFIG_HOME/tofu/tofu.tfrc"
+
+### [libpq](https://formulae.brew.sh/formula/libpq#default) ###
+# LIBPQ_PATH defines the location of libpq binaries
+export LIBPQ_PATH="/opt/homebrew/opt/libpq/bin"
+# For compilers to find libpq you may need to set (uncomment if needed)
+# export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+
