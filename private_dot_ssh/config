@@ -65,7 +65,7 @@ Hostname 5.161.134.92
 Port 22
 User root
 PreferredAuthentications password
-IdentityFile ~/.ssh/twigai_id_rsa
+IdentityFile ~/.ssh/id-rsa-twigai-workstation
 
 # tech.twig.ai | gitlab.com account (deprecated vcs)
 # Host gitlab.com/twigai
