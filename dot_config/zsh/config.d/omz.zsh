@@ -11,6 +11,7 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 plugins=(
 	git
 	# task # temporarily turned off
+	aws
 	kubectl
 )
 
