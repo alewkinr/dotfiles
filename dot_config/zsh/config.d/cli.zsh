@@ -56,4 +56,6 @@ export LIBPQ_PATH="/opt/homebrew/opt/libpq/bin"
 # For compilers to find libpq you may need to set (uncomment if needed)
 # export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 # export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+# For pkg-config to find libpq you may need to set:
+# export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
 
