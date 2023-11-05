@@ -7,7 +7,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export BREWPATH="/opt/homebrew/bin"
 # HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK - turns off automatic updates during installation (https://apple.stackexchange.com/a/452535)
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
-
+# HOMEBREW_BUNDLE_FILE_GLOBAL defines the location of Brewfile which can be used from anywhere
+export HOMEBREW_BUNDLE_FILE_GLOBAL="$HOME/tech/github.com/alewkinr/dotfiles/Brewfile"
 
 ### [Taskfile](https://github.com/go-task/task) ###
 # GLOBAL_TASKFILE defines the location of taskfile which can be used from anywhere
