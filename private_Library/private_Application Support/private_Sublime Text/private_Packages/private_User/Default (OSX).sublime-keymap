@@ -1,0 +1,9 @@
+[
+	{ "keys": ["alt+m"], "command": "open_markdown_preview"},
+	{ "keys": ["super+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+	{ "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+	{ "keys": ["super+sift+e"], "command": "replace_next" },
+	{ "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["super+t"], "command": "new_file" },
+	{ "keys": ["super+shift+u"], "command": "upper_case" },
+]
