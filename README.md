@@ -15,9 +15,8 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 * .config/zsh/*
 * .config/tofu/*
 * org.yanex.marta/*
-
+* SublimeText.app/*
 
 ## To be covered
 * .config/nvim/*
-* SublimeText.app/*
 * .config/yandex-cloud (integrate with 1password)
