@@ -19,7 +19,7 @@ plugins=(
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 
 # ZSH_DISABLE_COMPFIX disables compfix check
-ZSH_DISABLE_COMPFIX="true"
+ZSH_DISABLE_COMPFIX="false"
 
 # Adding the zsh-autocompletion for tools installed via brew
 if type brew &>/dev/null; then
