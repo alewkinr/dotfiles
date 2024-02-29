@@ -21,3 +21,4 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 * .config/nvim/*
 * .config/yandex-cloud (integrate with 1password)
 * /etc/hosts (with ansible I guess)
+* Brewfile (brew bundle dump for new PC installation)
