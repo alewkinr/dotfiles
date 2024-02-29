@@ -10,7 +10,6 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 # plugins defines the list of plugins which will be loaded in your zsh. Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	# task # temporarily turned off
 	aws
 	kubectl
 )
@@ -23,7 +22,7 @@ ZSH_DISABLE_COMPFIX="false"
 
 # Adding the zsh-autocompletion for tools installed via brew
 if type brew &>/dev/null; then
-	FPATH="$(brew --prefix)/share/zsh-completions":$FPATH
+	FPATH="$(brew --prefix)/share/zsh-completions":"$(brew --prefix)/share/zsh/site-functions":$FPATH
 fi
 
 # Adding zsh-autocompletion for CLI tools installed in a custom way

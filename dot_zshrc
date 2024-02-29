@@ -6,8 +6,12 @@ export EDITOR="nvim"
 
 
 ### CONFIGS ###
-# XDG_CACHE_HOME defines the directory for storing cache and local state of different applications
-export XDG_CACHE_HOME="$HOME/.local/cache/"
+# XDG_DATA_HOME defines the directory for storing local data of different applications
+export XDG_DATA_HOME="$HOME/.local/data"
+# XDG_STATE_HOME defines the directory for storing local state of different applications
+export XDG_STATE_HOME="$HOME/.local/state"
+# XDG_CACHE_HOME defines the directory for storing cache and local cache of different applications
+export XDG_CACHE_HOME="$HOME/.local/cache"
 # XDG_CONFIG_HOME defines the directory fo storing configs
 export XDG_CONFIG_HOME="$HOME/.config"
 # Loading configs from different location
@@ -19,3 +23,6 @@ unset conf
 
 # PATH. Exporting it
 export PATH="$PATH:$BREWPATH:$LIBPQPATH:$DOCKERPATH:$JB_TOOLBOXPATH:$GOPATH/bin:$POETRY_HOME"
+
+
+

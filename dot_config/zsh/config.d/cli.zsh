@@ -53,5 +53,5 @@ export DOCKERPATH="$HOME/.docker/bin"
 # DOCKER_CLI_HINTS defines the setting to turn on the cli-completion
 export DOCKER_CLI_HINTS=true
 # DOCKER_HOST defines the location to docker demon socket
-# export DOCKER_HOST="$HOME/.docker/run/docker.sock"
+export DOCKER_HOST="$HOME/.docker/run/docker.sock"
 
