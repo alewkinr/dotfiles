@@ -24,8 +24,6 @@ brew "tree-sitter"
 brew "neovim", args: ["HEAD"]
 brew "node"
 brew "opentofu"
-brew "podman"
-brew "podman-compose"
 brew "poetry"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
