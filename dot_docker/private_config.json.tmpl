@@ -1,10 +1,17 @@
 {{- $username := ((onepasswordDetailsFields .docher_hub_secret_id).username.value) -}}
 {{- $pass := ((onepasswordDetailsFields .docher_hub_secret_id).password.value) -}}
 {{- $creds := printf "%s:%s" $username $pass  -}}
+
 {
-	"auths": {
-		"docker.io": {
-			"auth": {{- $creds | b64enc | quote }}
-		}
-	}
+  "auths": {
+    "https://index.docker.io/v1/": {
+      "auth":{{- $creds | b64enc | quote }}
+    }
+  },
+  "currentContext": "desktop-linux",
+  "plugins": {
+    "-x-cli-hints": {
+      "enabled": "true"
+    }
+  }
 }

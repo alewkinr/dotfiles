@@ -5,8 +5,8 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 ## Covered
 * .zshrc
 * .ssh/*
+* .docker/*  (_there is no option to relocate this folder to ~/.config. On macOS Docker Desktop must be installed in user's home directory_)
 * .config/aws/*
-* .config/containers/*
 * .config/dlv/*
 * .config/fonts/*
 * .config/git/*
@@ -20,3 +20,4 @@ This repository contains alewkinr's dotfiles. It's all managed by [chezmoi](http
 ## To be covered
 * .config/nvim/*
 * .config/yandex-cloud (integrate with 1password)
+* /etc/hosts (with ansible I guess)
