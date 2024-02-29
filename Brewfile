@@ -2,6 +2,8 @@ tap "apple/apple", "http://github.com/apple/homebrew-apple"
 tap "gcenx/apple"
 tap "gcenx/wine"
 tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
 brew "aws-iam-authenticator"
 brew "xz"
 brew "awscli"
@@ -33,6 +35,7 @@ cask "1password-cli"
 cask "arc"
 cask "binance"
 cask "discord"
+cask "docker"
 cask "figma"
 cask "insomnia"
 cask "jetbrains-toolbox"
@@ -55,6 +58,7 @@ cask "vincelwt-chatgpt"
 cask "vlc"
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
+mas "Eightify", id: 6448126776
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825

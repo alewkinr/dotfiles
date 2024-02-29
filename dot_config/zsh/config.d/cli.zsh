@@ -10,16 +10,12 @@ export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 # HOMEBREW_BUNDLE_FILE_GLOBAL defines the location of Brewfile which can be used from anywhere
 export HOMEBREW_BUNDLE_FILE_GLOBAL="$HOME/tech/github.com/alewkinr/dotfiles/Brewfile"
 
+
 ### [Taskfile](https://github.com/go-task/task) ###
 # GLOBAL_TASKFILE defines the location of taskfile which can be used from anywhere
 export GLOBAL_TASKFILE="$HOME/tech/github.com/alewkinr/configs/Taskfile.yml"
 # gtask is a command that can be used to run a command from global taskfile
 function gtask() { task -t $GLOBAL_TASKFILE $@ -- $(pwd); }
-
-
-### [YandexCloud CLI](https://cloud.yandex.ru/docs/cli/quickstart) ###
-# Fixing the autocompletion for zsh
-if [ -f "$HOME/.yandex-cloud/completion.zsh.inc" ]; then source "$HOME/.yandex-cloud/completion.zsh.inc"; fi
 
 
 ### JetBrains Toolbox App
@@ -41,22 +37,21 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 
 
-### [Podman.io](https://docs.podman.io/en/latest/index.html) ###
-# DOCKER_HOST defines the location of podman socket to use it as docker daemon
-export DOCKER_HOST="unix://$HOME/.local/share/containers/podman/machine/qemu/podman.sock"
-# PODMAN_USERNS defines the userns mode for podman. It is needed to run containers in VM with current user privileges
-export PODMAN_USERNS=keep-id
-
 ### [OpenTofu](https://opentofu.org/docs/cli/config/config-file) ###
 # TF_CLI_CONFIG_FILE defines the location of config file for OpenTofu CLI
 export TF_CLI_CONFIG_FILE="$XDG_CONFIG_HOME/tofu/tofu.tfrc"
 
+
 ### [libpq](https://formulae.brew.sh/formula/libpq#default) ###
-# LIBPQ_PATH defines the location of libpq binaries
-export LIBPQ_PATH="/opt/homebrew/opt/libpq/bin"
-# For compilers to find libpq you may need to set (uncomment if needed)
-# export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
-# export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
-# For pkg-config to find libpq you may need to set:
-# export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
+# LIBPQPATH defines the location of libpq binaries
+export LIBPQPATH="/opt/homebrew/opt/libpq/bin"
+
+
+## [Docker](https://docs.docker.com/reference/cli/dockerd/) ###
+# DOCKERPATH defines path to docker binaries
+export DOCKERPATH="$HOME/.docker/bin"
+# DOCKER_CLI_HINTS defines the setting to turn on the cli-completion
+export DOCKER_CLI_HINTS=true
+# DOCKER_HOST defines the location to docker demon socket
+# export DOCKER_HOST="$HOME/.docker/run/docker.sock"
 
