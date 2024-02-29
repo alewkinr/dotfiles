@@ -5,6 +5,5 @@
    "enabled": true
   }
  },
- "experimental": false,
- "data-root": "/Users/alewkinr/.docker/data-root"
+ "experimental": false
 }
