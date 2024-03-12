@@ -1,0 +1,4 @@
+[user]
+    name = {{ .name | quote }}
+    email = alewkinr@gmail.com
+    signingkey = {{ ( onepasswordRead (.ssh_twigai_key_secret_id | printf "op://twig.ai/%s/public key") ) | quote }}

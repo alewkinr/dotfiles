@@ -7,13 +7,15 @@ Host github.com
 Hostname github.com
 Port 22
 User alewkinr
-IdentityFile ~/.ssh/id-rsa-mts-workstation
+AddKeysToAgent yes
+IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 # gitlab.com
 Host gitlab.com
 Hostname gitlab.com
 Port 22
 User raleshkin
+AddKeysToAgent yes
 IdentityFile ~/.ssh/id-rsa-personal-macbook
 
 # alewkin.me | apitable service

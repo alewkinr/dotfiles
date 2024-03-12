@@ -1,0 +1,3 @@
+{{ .email }} namespaces="git" {{ ( onepasswordRead (.ssh_personal_key_secret_id | printf "op://Personal/%s/public key") ) }}
+alewkinr@gmail.com namespaces="git" {{ ( onepasswordRead (.ssh_twigai_key_secret_id | printf "op://twig.ai/%s/public key") ) }}
+rraleshk@mts.ru namespaces="git" {{ ( onepasswordRead (.ssh_mts_key_secret_id | printf "op://MTS/%s/public key") ) }}
