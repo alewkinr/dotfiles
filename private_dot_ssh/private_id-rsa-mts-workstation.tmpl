@@ -1,1 +1,1 @@
-{{- ( onepasswordRead (.ssh_mts_key_secret_id | printf "op://Personal/%s/private_key") ) }}
+{{- ( onepasswordRead (.ssh_mts_key_secret_id | printf "op://MTS/%s/private_key") ) }}

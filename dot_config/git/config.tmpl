@@ -1,6 +1,16 @@
+# ref: https://jvns.ca/blog/2024/02/16/popular-git-config-options/
+
 [user]
 	name = {{ .name | quote }}
 	email = {{ .email | quote }}
+	signingkey = {{ ( onepasswordRead (.ssh_personal_key_secret_id | printf "op://Personal/%s/public key") ) | quote}}
+
+[gpg]
+	format = ssh
+
+[gpg.ssh]
+	allowedSignersFile = "~/.config/git/allowed_signers"
+	program = ssh-keygen
 
 [init]
 	defaultBranch = main
@@ -8,12 +18,32 @@
 [core]
 	editor = nvim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	pager = delta
+	quotePath = true
+	autocrlf = false
+
+[branch]
+	sort = -committerdate
+
+[diff]
+	algorithm = histogram
+	submodule = log
+	context = 10
+	colorMoved = default
+	colorMovedWS = allow-indentation-change
+	tool = nvimdiffs
+
+[status]
+	submoduleSummary = true
 
 [web]
 	browser = safari
 
+[help]
+	autocorrect = 10
+
 [color]
-	ui = auto
+	ui = false
 
 [color "branch"]
 	current = yellow bold
@@ -39,12 +69,55 @@
 [gitflow "prefix"]
 	versiontag = v
 
+[tag]
+	sort = taggerdate
+
+[commit]
+	verbose = true
+	gpgsign = true
+
+[push]
+	autoSetupRemote = true
+	followtags = true
+
 [pull]
-	rebase = false
+	rebase = true
 
-## Settings for companies
-[url "git@git.dev.cloud.mts.ru:"]
-	insteadOf = https://git.dev.cloud.mts.ru/
+[rebase]
+	autosquash = true
+	autostash = true
 
-[url "git@gitlab.zxz.su:"]
-	insteadOf = https://gitlab.zxz.su
+[rerere]
+	enabled = true
+
+[merge]
+	conflictStyle = zdiff3
+	tool = nvim
+
+[fetch]
+	prune= true
+
+[submodule]
+	recurse = false
+
+[transfer]
+	fsckobjects = true
+	fsckobjects = true
+	fsckObjects = true
+
+[url "git@github.com:"]
+	# helps in case the HTTPS version of repository was accidentally clone instead of SSH one
+	insteadOf = "https://github.com/"
+
+####################################################################################
+############################## COMPANIES OVERWRITES ################################
+####################################################################################
+
+[includeIf "gitdir:~/tech/github.com/twig-ai"]
+	path = "~/.config/git/organizations/twig.ai/config"
+
+[includeIf "gitdir:~/tech/git.dev.cloud.mts.ru"]
+	path = "~/.config/git/organizations/cloud.mts.ru/config"
+
+[includeIf "gitdir:~/tech/gitlab.zxz.su"]
+	path = "~/.config/git/organizations/yappi.media/config"

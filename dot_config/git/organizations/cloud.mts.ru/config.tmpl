@@ -1,0 +1,7 @@
+[user]
+	name = {{ .name | quote }}
+	email = rraleshk@mts.ru
+	signingkey = {{ ( onepasswordRead (.ssh_mts_key_secret_id | printf "op://MTS/%s/public key") ) | quote }}
+
+[url "git@git.dev.cloud.mts.ru:"]
+	insteadOf = https://git.dev.cloud.mts.ru/
