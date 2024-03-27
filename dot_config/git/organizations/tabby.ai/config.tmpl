@@ -1,0 +1,4 @@
+[user]
+    name = {{ .name | quote }}
+    email = ramil.aleshkin@tabby.ai
+    signingkey = {{ ( onepasswordRead (.ssh_tabbyai_key_secret_id | printf "op://tabby.ai/%s/public_key") ) | quote }}

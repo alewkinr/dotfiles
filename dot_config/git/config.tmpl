@@ -109,6 +109,10 @@
 	# helps in case the HTTPS version of repository was accidentally clone instead of SSH one
 	insteadOf = "https://github.com/"
 
+[url "git@gitlab.com:"]
+# helps in case the HTTPS version of repository was accidentally clone instead of SSH one
+	insteadOf = "https://gitlab.com"
+
 ####################################################################################
 ############################## COMPANIES OVERWRITES ################################
 ####################################################################################
@@ -121,3 +125,6 @@
 
 [includeIf "gitdir:~/tech/gitlab.zxz.su"]
 	path = "~/.config/git/organizations/yappi.media/config"
+
+[includeIf "gitdir:~/tech/gitlab.com/tabby.ai"]
+	path = "~/.config/git/organizations/tabby.ai/config"

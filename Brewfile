@@ -56,11 +56,12 @@ cask "vincelwt-chatgpt"
 cask "vlc"
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
-mas "Eightify", id: 6448126776
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Outline", id: 1356178125
 mas "Pages", id: 409201541
+mas "Slack", id: 803453959
 mas "Telegram", id: 747648890
+mas "Twitter", id: 1482454543
 mas "WhatsApp", id: 1147396723
