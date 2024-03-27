@@ -17,6 +17,7 @@ persistentState = "~/tech/github.com/alewkinr/dotfiles/chezmoistate.boltdb" # pe
     ssh_personal_key_secret_id = "hpppilgphqd7i5cr62dm24xozm"
     ssh_mts_key_secret_id = "hzpw4263i4burz66id7ewqzoy4"
     ssh_twigai_key_secret_id = "3scedmnxwx6wqtdnqrq5qxavka"
+    ssh_tabbyai_key_secret_id = "osphxqqvfnvjapoezc3hrf3aza"
 
     # awscli_twig_ai_* variables for twig.ai aws profile
     awscli_twig_ai_profile_name = "twig.ai"
