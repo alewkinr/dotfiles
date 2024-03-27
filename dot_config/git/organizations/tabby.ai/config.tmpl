@@ -2,3 +2,8 @@
     name = {{ .name | quote }}
     email = ramil.aleshkin@tabby.ai
     signingkey = {{ ( onepasswordRead (.ssh_tabbyai_key_secret_id | printf "op://tabby.ai/%s/public_key") ) | quote }}
+
+# [url "git@tabbyai.gitlab.com:"]
+    # helps in case the HTTPS version of repository was accidentally clone instead of SSH one
+    # and also resolves conflicts with the personal gitlab.com account
+    # insteadOf = "https://gitlab.com/tabby.ai"
